@@ -1,0 +1,22 @@
+*
+body {
+    background-color: beige;
+    
+}
+
+h1 {
+    font-size: 36px;
+    color: gray;
+}
+
+.text-container {
+    width: 45%;
+    
+    
+
+}
+
+p {
+    font-size: 16px;
+    color: gray;
+}
