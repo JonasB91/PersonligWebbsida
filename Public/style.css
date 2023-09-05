@@ -7,7 +7,6 @@ body, html {
     overflow: hidden;
 }
 
-
 /* animation för att byta bakgrund på framsidan */
 .background-animation {
   width: 100%;
@@ -50,35 +49,6 @@ body, html {
 
 }
 
-/* headline styling för text som ska visas på framsidan
-.headline h1 {
-    text-align: left;
-    color: white;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 70px;
-    width: 50%;
-    padding: 10px;
-  }
-  .headline h2 {
-    text-align: center;
-  color: white;
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 60px;
-  width: 50%;
-  padding: 10px;
-  }
-  
-  .headline h3 {
-    text-align: right;
-  color: white;
-  font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 50px;
-  width: 50%;
-  padding: 10px;
-  }*/
 
 /*Bakgrunds färg till topp navigationsbaren*/
 .topnav {

@@ -1,7 +1,44 @@
 *
 body {
     background-color: beige;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/*Bakgrunds färg till topp navigationsbare
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+/*Stylar länkarna till toppnavbaren*/
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* byta färg på hovermouse effekt över län
+.topnav a:hover {
+    background-color: #49504d;
+    color: black;
+}
+
+/* Visar vilken flik som är aktiv*/
+.topnav a.active {
+    background-color: #49504d;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
 
 .contact-container{
     text-align: left;
