@@ -17,7 +17,7 @@ body, html {
   left: 0;
   background-size: cover;
   animation: changeBackground 15s linear infinite;
-  animation-delay: 15s;
+  animation-delay: 10s;
 }
 
 
@@ -48,7 +48,6 @@ body, html {
   }
 
 }
-
 
 /*Bakgrunds färg till topp navigationsbaren*/
 .topnav {

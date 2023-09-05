@@ -3,45 +3,11 @@ body {
     padding: 0;
     margin: 0;
     background-color: beige;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    box-sizing: border-box;
     
 }
 
-h1 {
-    font-size: 36px;
-    color: gray;
-}
-
-.text-container {
-    width: 300px;
-    padding: 20px;
-    border: 2px solid #333;
-    border-radius: 12px;
-    margin: 50px;
-    text-align: center;
-}
-
-.text-container p {
-    font-size: 16px;
-    color: gray;
-}
-
-.video-container {
-    width: 300px;
-    text-align: center;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 169px;
-    border: 2px solid #333;
-    border-radius: 8px;
-}
-
-/*Bakgrunds färg till topp navigationsbare
+/*Bakgrunds färg till topp navigationsbaren*/
 .topnav {
     background-color: #333;
     overflow: hidden;
@@ -57,7 +23,7 @@ h1 {
     font-size: 24px;
 }
 
-/* byta färg på hovermouse effekt över län
+/* byta färg på hovermouse effekt över länkarna*/
 .topnav a:hover {
     background-color: #49504d;
     color: black;
@@ -73,3 +39,43 @@ h1 {
     display: none;
 }
 
+
+/* Sätter  om skärmen är mindre än 700pixels bred, så gömmer vi alla länkar förutom en.*/
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+/* Responsiv klassen till navbaren används med javascript så att den ser bra ut på mindre skärmar*/
+  @media screen and (max-width: 700px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+  .text-container {
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    margin: 50px;
+    text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: gray;
+}

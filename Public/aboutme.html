@@ -4,12 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om mig</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Public/aboutme.css">
 </head>
 <body>
-    <h1>
-        Hej - Jonas här..
-    </h1>
         <div class="topnav" id="myTopnav">
         <a href="index.html" class="active">Hem</a>
         <a href="aboutme.html">Om mig</a>
@@ -18,7 +16,7 @@
           <i class="fa fa-bars"></i>
         </a>
         </div>
-        
+
         <div class="text-container">
             <p>
                 Jag är en glad och trevlig prick på 32 år.
@@ -27,33 +25,20 @@
                 På min fritid älskar jag att umgås med min familj samt att få träna och koppla av.
                 Jag har två små barn Lexie & Caspian, med min fru Emma.
                 Jag har nu valt att studera till frontendutvecklare på Jensen Yrkeshögskola och ser fram
-                emot en spännande resa framför mig. - Till höger har ni ett video klipp på 16 Ton Sprängämne
-                Där vi sprängde för ett fundament till en av vindkraftssnurrorna uppe i Viksjö i Sundsvall.
-                
+                emot en spännande resa framför mig
             </p>
+
+            <div class="text-contaner-two">
+                <p>
+                    Mina framtida mål är att kunna bli så bra som möjlig inom frontendutveckling.
+                    Det är en spännande resa framöver och jag ser väldigt mycket fram emot att få träffa
+                    nya vänner och dela kunskaper och erfarenheter med varandra!
+                </p>
+
+            </div>
+
         </div>
-        <!--Ny div för frame till videon-->
-        <div class="video-container">
-                <iframe id="video" width="300" height="169" src="Blasting.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-         
-        <script src="/Javascript/app.js"></script>
         
+        <script src="/Javascript/app.js"></script>
 </body>
 </html>
-
-<!--Script som gör att du kan öppna i fullscreen samt kollar olika webbläsare för funktionalitet-->
-<script>
-    const videoFrame = document.querySelector('.video-container');
-    const video = document.getElementById('video');
-
-    videoFrame.addEventListener('click', () => {
-        if (video.requestFullscreen) {
-            video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen(); // kollar om den fungerar på firefox webbläsare
-        } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen(); // kollar om det fungerar på safari - opera och chrome webbläsare
-        }
-    });
-</script>
