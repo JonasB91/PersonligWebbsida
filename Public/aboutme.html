@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Om mig</title>
+    <link rel="stylesheet" href="/Public/aboutme.css">
+</head>
+<body>
+    <h1>
+        Hej - Jonas här..
+    </h1>
+        <div class="text-container">
+            <p>
+                Jag är en glad och trevlig prick på 32 år.
+                Tidigare har jag arbetat som Sprängarbas och varit med små till gigantiska projekt.
+                Mitt yrkesliv har varit spännande och rolig, Men nu har jag valt att gå en annan väg!
+                På min fritid älskar jag att umgås med min familj samt att få träna och koppla av.
+                Jag har två små barn Lexie & Caspian, med min fru Emma.
+                Jag har nu valt att studera till frontendutvecklare på Jensen Yrkeshögskola och ser fram
+                emot en spännande resa framför mig. - Till höger har ni ett video klipp på 16 Ton Sprängämne
+                Där vi sprängde för ett fundament till en av vindkraftssnurrorna uppe i Viksjö i Sundsvall.
+                
+            </p>
+        </div>
+        <!--Ny div för frame till videon-->
+        <div class="video-container">
+                <iframe id="video" width="300" height="169" src="Blasting.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+         
+        <script src="Javascript/app.js"></script>
+</body>
+</html>
+
+<!--Script som gör att du kan öppna i fullscreen samt kollar olika webbläsare för funktionalitet-->
+<script>
+    const videoFrame = document.querySelector('.video-container');
+    const video = document.getElementById('video');
+
+    videoFrame.addEventListener('click', () => {
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+            video.mozRequestFullScreen(); // kollar om den fungerar på firefox webbläsare
+        } else if (video.webkitRequestFullscreen) {
+            video.webkitRequestFullscreen(); // kollar om det fungerar på safari - opera och chrome webbläsare
+        }
+    });
+</script>
