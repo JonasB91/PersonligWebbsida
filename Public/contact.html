@@ -3,38 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Info</title>
-    <link rel="stylesheet" href="/Public/contact.css">
+    <title>Hem</title>
+    <link rel="stylesheet" 
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/Public/indexstyle.css">
 </head>
-<body>
-        <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Hem</a>
-        <a href="aboutme.html">Om mig</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-        </div>
+  <body>
+    <div class="background">
+        <header>
+            
+            <!--Navbar -->
+            <div class="navbar">
+              <div class="logo">Min Webbsida</div>
 
-        <div class="contact-container">
-            <ul>
-            <list>
-                <p>Contact Info</p>
-                <p>Name: Jonas Backas</p>
-                <p>Adress: Väderkvarnsgatan 1</p>
-                <p>State: Stockholm</p>
-                <p>Country: Sweden</p>
-                <p>Phone:0720134465</p>
-            </list>
-        </ul>
-    </div>
-        <div class="topleft">
-            <img src="jonas.jpg" alt="Bild på Jonas">
+              <!--Länkar till olika flikar-->
+              <ul class="links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="aboutme.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+              </ul>
 
-        </div>
-    </div>
-    
-    <script src="Javascript/app.js"></script>
-    
-</body>
+              <!--knapp för meny på sidan till hamburgarmeny-->
+              <!--<a href="#" class="action_button">Menu</a> denna används inte för tillfället ska användas till en slider senare-->
+                <div class="toggle_button">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+
+              <!--DropdownMENY-->
+              <div class="dropdown_menu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="aboutme.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                
+                <!--Finns förberett menu knapp för att flytta flikarna i navbaren till en slider-->
+                <!--<a href="#" class="action_button">Menu</a>-->
+              </div>
+
+              <!-- Fortsättning under här för sidans MAIN CONTENT - tex info om mig osv... -->
+
+              <div class="contact-container">
+                <divt class="text-contact-container">
+                      <ul>
+                        <article>
+                          <p>Namn: Jonas Backas</p>
+                          <p>Telefon: 0720134465</p>
+                          <p>Mail: jonas.backas@hotmail.com</p>
+                          <p>Adress: Väderkvarnsgatan 1</p>
+                          <p>Stad: Stockholm</p>
+                        </article>
+                      </ul>
+                </div>
+              </div>
+
+
+
+              <script>
+                const toggle_button = document.querySelector('.toggle_button')
+                const toggle_button_icon = document.querySelector('.toggle_button i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+
+                toggle_button.onclick = function () {
+                  dropDownMenu.classList.toggle('open')
+                  const isOpen = dropDownMenu.classList.contains('open')
+
+                  toggle_button_icon.classList = isOpen
+                  ? 'fa-solid fa-xmark'
+                  : 'fa-solid fa-bars'
+                }
+              </script>
+        </header>
+      </div>
+  </body>
 </html>

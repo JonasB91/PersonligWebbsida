@@ -4,56 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Om mig</title>
-    <link rel="stylesheet" href="/Public/aboutme.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="/Public/indexstyle.css">
 </head>
 <body>
-    <h1>
-        Hej - Jonas här..
-    </h1>
-        <div class="topnav" id="myTopnav">
-        <a href="index.html" class="active">Hem</a>
-        <a href="aboutme.html">Om mig</a>
-        <a href="contact.html">Kontakt</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-        </div>
-        
-        <div class="text-container">
-            <p>
-                Jag är en glad och trevlig prick på 32 år.
-                Tidigare har jag arbetat som Sprängarbas och varit med små till gigantiska projekt.
-                Mitt yrkesliv har varit spännande och rolig, Men nu har jag valt att gå en annan väg!
-                På min fritid älskar jag att umgås med min familj samt att få träna och koppla av.
-                Jag har två små barn Lexie & Caspian, med min fru Emma.
-                Jag har nu valt att studera till frontendutvecklare på Jensen Yrkeshögskola och ser fram
-                emot en spännande resa framför mig. - Till höger har ni ett video klipp på 16 Ton Sprängämne
-                Där vi sprängde för ett fundament till en av vindkraftssnurrorna uppe i Viksjö i Sundsvall.
+    <div class="background">
+        <header>
+            
+            <!--Navbar -->
+            <div class="navbar">
+              <div class="logo">Min Webbsida</div>
+              <!--Länkar till olika flikar-->
+              <ul class="links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="aboutme.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+              </ul>
+              <!--knapp för meny på sidan till hamburgarmeny-->
+              <!--<a href="#" class="action_button">Menu</a> denna används inte för tillfället ska användas till en slider senare-->
+                <div class="toggle_button">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+              <!--DropdownMENY-->
+              <div class="dropdown_menu">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="aboutme.html">Om mig</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
                 
-            </p>
-        </div>
-        <!--Ny div för frame till videon-->
-        <div class="video-container">
-                <iframe id="video" width="300" height="169" src="Blasting.mp4" frameborder="0" allowfullscreen></iframe>
-        </div>
-         
-        <script src="/Javascript/app.js"></script>
-        
-</body>
+                <!--Finns förberett menu knapp för att flytta flikarna i navbaren till en slider-->
+                <!--<a href="#" class="action_button">Menu</a>-->
+              </div>
+
+              <!-- Fortsättning här för sidans MAIN CONTENT - tex info om mig osv... -->
+              <div class="content-container">
+                <div class="text-container"> 
+                    <p> 
+                        Jag är en glad och trevlig prick på 32 år. 
+                        Tidigare har jag arbetat som Sprängarbas och varit med små till gigantiska projekt. 
+                        Mitt yrkesliv har varit spännande och rolig, Men nu har jag valt att gå en annan väg! 
+                        På min fritid älskar jag att umgås med min familj samt att få träna och koppla av. 
+                        Jag har två små barn Lexie & Caspian, med min fru Emma. 
+                        Jag har nu valt att studera till frontendutvecklare på Jensen Yrkeshögskola och ser fram 
+                        emot en spännande resa framför mig 
+                    </p> 
+                 </div>
+              </div>
+            
+            
+              <script>
+                const toggle_button = document.querySelector('.toggle_button')
+                const toggle_button_icon = document.querySelector('.toggle_button i')
+                const dropDownMenu = document.querySelector('.dropdown_menu')
+                toggle_button.onclick = function () {
+                  dropDownMenu.classList.toggle('open')
+                  const isOpen = dropDownMenu.classList.contains('open')
+                  toggle_button_icon.classList = isOpen
+                  ? 'fa-solid fa-xmark'
+                  : 'fa-solid fa-bars'
+                }
+              </script>
+        </header>
+      </div>
+  </body>
+<!-- <body> -->
+<!--         <div class="topnav" id="myTopnav"> -->
+<!--         <a href="index.html" class="active">Hem</a> -->
+<!--         <a href="aboutme.html">Om mig</a> -->
+<!--         <a href="contact.html">Kontakt</a> -->
+<!--         <a href="javascript:void(0);" class="icon" onclick="myFunction()"> -->
+<!--           <i class="fa fa-bars"></i> -->
+<!--         </a> -->
+<!--         </div> -->
+<!--  -->
+<!--         <div class="text-container"> -->
+<!--             <p> -->
+<!--                 Jag är en glad och trevlig prick på 32 år. -->
+<!--                 Tidigare har jag arbetat som Sprängarbas och varit med små till gigantiska projekt. -->
+<!--                 Mitt yrkesliv har varit spännande och rolig, Men nu har jag valt att gå en annan väg! -->
+<!--                 På min fritid älskar jag att umgås med min familj samt att få träna och koppla av. -->
+<!--                 Jag har två små barn Lexie & Caspian, med min fru Emma. -->
+<!--                 Jag har nu valt att studera till frontendutvecklare på Jensen Yrkeshögskola och ser fram -->
+<!--                 emot en spännande resa framför mig -->
+<!--             </p> -->
+<!--  -->
+<!--             <div class="text-contaner-two"> -->
+<!--                 <p> -->
+<!--                     Mina framtida mål är att kunna bli så bra som möjlig inom frontendutveckling. -->
+<!--                     Det är en spännande resa framöver och jag ser väldigt mycket fram emot att få träffa -->
+<!--                     nya vänner och dela kunskaper och erfarenheter med varandra! -->
+<!--                 </p> -->
+<!--  -->
+<!--             </div> -->
+<!--  -->
+<!--         </div> -->
+<!--          -->
+<!--         <script src="/Javascript/app.js"></script> -->
+<!-- </body> -->
 </html>
-
-<!--Script som gör att du kan öppna i fullscreen samt kollar olika webbläsare för funktionalitet-->
-<script>
-    const videoFrame = document.querySelector('.video-container');
-    const video = document.getElementById('video');
-
-    videoFrame.addEventListener('click', () => {
-        if (video.requestFullscreen) {
-            video.requestFullscreen();
-        } else if (video.mozRequestFullScreen) {
-            video.mozRequestFullScreen(); // kollar om den fungerar på firefox webbläsare
-        } else if (video.webkitRequestFullscreen) {
-            video.webkitRequestFullscreen(); // kollar om det fungerar på safari - opera och chrome webbläsare
-        }
-    });
-</script>
