@@ -6,7 +6,7 @@
 }
 
 body {
-    overflow: hidden;
+    
     height: 100vh;
     background-image: url(nasaBackground.jpg);
     background-size: cover;
@@ -153,7 +153,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 0 10px #00ff00;
+    box-shadow: 0 0 10px #79fc79;
     border-radius: 12px;
 }
 
@@ -212,7 +212,7 @@ header {
     max-height: 95%;
     justify-items: center;
     border-radius: 10px;
-    box-shadow: 0 0 10px #00ff00;
+    box-shadow: 0 0 10px #79fc79;
     
 }
 
@@ -250,4 +250,40 @@ p.copyright {
     font-size: 0.8rem;
     text-align: center;
     margin: 0;
+}
+
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5vh;
+    color: #fff;
+    text-align: center;
+    
+    
+}
+
+.form-button {
+    margin-top: 20px;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    color: black;
+    box-shadow: 0 0 10px #79fc79;
+    
+}
+
+textarea {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 80px;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #79fc79;
 }
