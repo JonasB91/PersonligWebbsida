@@ -112,14 +112,15 @@ header {
 }
 
 
+
 /* DROPDOWN MENY */
 .dropdown_menu {
     position: absolute;
     right: 2rem;
     top: 80px;
-    width: 350px;
+    width: 380px;
     background: rgb(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border-radius: 12px;
     overflow: hidden;
     height: 0;
@@ -273,6 +274,7 @@ p.copyright {
     justify-content: center;
     color: black;
     box-shadow: 0 0 10px #79fc79;
+    background-color: rgb(251, 240, 240);
     
 }
 
@@ -286,4 +288,27 @@ textarea {
     margin-top: 5px;
     font-size: 20px;
     box-shadow: 0 0 10px #79fc79;
+    background-color: rgb(251, 240, 240);
+}
+
+.gallery-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 15px;
+    object-fit: contain;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
