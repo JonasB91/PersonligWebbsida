@@ -34,6 +34,7 @@ header {
     padding: 0 2rem;
     font-size: 25px;
     
+    
 }
 
 
@@ -47,24 +48,36 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
+    padding-top: 2vh;
 }
 
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding-top: 1.5vh;
+    padding-left: 1vh;
 }
 
 .navbar .toggle_button {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     display: none;
+    margin: 5px;
+    
 }
+
+.toggle_button {
+    padding-left: 1.5vh;
+
+}
+
 
 /* Kommenterat bort eventuellt om jag ska fixa en slider och flytta över linkarna i slidern*/
 
@@ -103,14 +116,6 @@ header {
     }
 }
 
-@media (max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-}
-
-
 
 /* DROPDOWN MENY */
 .dropdown_menu {
@@ -144,6 +149,12 @@ header {
     height: 190px;
 }
 
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
 
 /*MAIN CONTENT*/
 
@@ -199,10 +210,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 80px;
+    padding-top: 5vh;
     
 }
 
@@ -263,7 +275,7 @@ p.copyright {
     color: #fff;
     text-align: center;
     float: left;
-    padding-left: 10vh;
+    padding-left: 0vh;
     
     
 }
@@ -294,6 +306,7 @@ textarea {
     background-color: rgb(251, 240, 240);
 }
 
+/* Kontakt information Text brevid textarean */
 .text-contact-container {
     display: flex;
     align-content: center;
