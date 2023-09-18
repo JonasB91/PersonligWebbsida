@@ -33,7 +33,6 @@ header {
     position: relative;
     padding: 0 2rem;
     font-size: 25px;
-    
 }
 
 
@@ -47,39 +46,35 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
+    padding-top: 2vh;
 }
 
 .navbar .logo a {
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 .navbar .links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding-top: 1.5vh;
+    padding-left: 1vh;
 }
 
 .navbar .toggle_button {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     display: none;
+    margin: 5px;
+    
 }
 
-/* Kommenterat bort eventuellt om jag ska fixa en slider och flytta över linkarna i slidern*/
+.toggle_button {
+    padding-left: 1.5vh;
+}
 
-/* .action_button { */
-/*     background-color: orange; */
-/*     color: #fff; */
-/*     padding: 0.5rem 1rem; */
-/*     border: none; */
-/*     outline: none; */
-/*     border-radius: 15px; */
-/*     font-size: 1rem; */
-/*     font-weight: bold; */
-/*     cursor: pointer; */
-/*     transition: scale .2 ease; */
-/* } */
 
 .action-button:hover {
     transform: scale(1.05);
@@ -91,8 +86,8 @@ header {
 }
 
 /* RESPONSIV */
-@media (max-width: 992px) {
-    .navbar .links
+@media screen and (max-width: 768px) {
+    .navbar .links,
     .navbar .action_button {
         display: none;
     }
@@ -102,14 +97,6 @@ header {
 
     }
 }
-
-@media (max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-}
-
 
 
 /* DROPDOWN MENY */
@@ -144,6 +131,12 @@ header {
     height: 190px;
 }
 
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
 
 /*MAIN CONTENT*/
 
@@ -199,10 +192,11 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40vh;
+    height: 50vh;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 80px;
+    padding-top: 5vh;
     
 }
 
@@ -231,11 +225,12 @@ header {
     text-align: center;
     color: #fff;
     padding-top: 40vh;
+    font-size: 80px;
 }
 
 /* Footern med copyright text */
 footer {
-    position: fixed;
+    position: static;
     height: 50px;
     width: 100%;
     background-color: transparent;
@@ -261,6 +256,8 @@ p.copyright {
     padding-top: 5vh;
     color: #fff;
     text-align: center;
+    float: left;
+    padding-left: 0vh;
     
     
 }
@@ -290,3 +287,25 @@ textarea {
     box-shadow: 0 0 10px #79fc79;
     background-color: rgb(251, 240, 240);
 }
+
+/* Kontakt information Text brevid textarean */
+.text-contact-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #fff;
+    float: right;
+    color: #fff; 
+}
+
+.p-text {
+    color: #fff;
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 40px; 
+}
+
+
+
+
+
