@@ -230,7 +230,7 @@ header {
 
 /* Footern med copyright text */
 footer {
-    position: static;
+    position: fixed;
     height: 50px;
     width: 100%;
     background-color: transparent;
@@ -247,6 +247,25 @@ p.copyright {
     margin: 0;
 }
 
+@media (max-width: 768px) {
+    footer {
+        position: static;
+        height: 50px;
+        width: 100%;
+        background-color: transparent;
+        bottom: 0;
+        left: 0;
+    }
+    
+    p.copyright {
+        width: 100%;
+        color: #fff;
+        line-height: 50px;
+        font-size: 0.8rem;
+        text-align: center;
+        margin: 0;
+    }
+}
 
 /* FORM KONTAKT RUTAN TILL KONTAKTSIDAN */
 .form-container {
