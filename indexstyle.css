@@ -98,6 +98,27 @@ header {
     }
 }
 
+@media screen and (max-width: 480px) {
+    .navbar .links,
+    .navbar .action_button {
+        display: none;
+    }
+
+    .navbar .toggle_button {
+        display: block;
+
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown_menu {
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+
 
 /* DROPDOWN MENY */
 .dropdown_menu {
@@ -131,12 +152,6 @@ header {
     height: 190px;
 }
 
-@media (max-width: 576px) {
-    .dropdown_menu {
-        left: 2rem;
-        width: unset;
-    }
-}
 
 /*MAIN CONTENT*/
 
@@ -225,7 +240,7 @@ header {
     text-align: center;
     color: #fff;
     padding-top: 40vh;
-    font-size: 80px;
+    font-size: 45px;
 }
 
 /* Footern med copyright text */
