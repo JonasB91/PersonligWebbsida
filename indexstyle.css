@@ -117,9 +117,6 @@ header {
     }
 }
 
-
-
-
 /* DROPDOWN MENY */
 .dropdown_menu {
     position: absolute;
@@ -151,7 +148,6 @@ header {
 .dropdown_menu.open {
     height: 190px;
 }
-
 
 /*MAIN CONTENT*/
 
